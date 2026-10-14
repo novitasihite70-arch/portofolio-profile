@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    color: #800020;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navigasi */
+header {
+    border-bottom: 1px solid #f2d6dc;
+    padding: 15px 0;
+    background-color: #fdf5f6;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #580016;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: #495057;
+    font-size: 0.9rem;
+}
+
+.nav-links a:hover {
+    color: #800020;
+}
+
+/* Header Profil / Hero */
+#profile-header {
+    padding: 40px 0;
+    border-bottom: 1px solid #f2d6dc;
+    background-color: #fdf5f6;
+}
+
+.profile-flex {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Styling Foto Profil (Sudah Diperkecil & Disesuaikan) */
+.photo {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #d99bb1;
+    flex-shrink: 0;
+    background-color: #f2d6dc;
+}
+
+.profile-info h1 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+    color: #580016;
+}
+
+.profile-info p {
+    color: #4a5568;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #800020;
+    color: #ffffff;
+    padding: 6px 14px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+}
+
+.btn:hover {
+    background-color: #580016;
+    text-decoration: none;
+}
+
+/* Section Umum */
+section {
+    padding: 30px 0;
+    border-bottom: 1px solid #f2efef;
+}
+
+section h2 {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+    color: #580016;
+    border-left: 4px solid #800020;
+    padding-left: 10px;
+}
+
+/* Styling Keterampilan (Skills) Burgandi */
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.skill-box {
+    border: 1px solid #f2d6dc;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #fdf5f6;
+}
+
+.skill-box h3 {
+    font-size: 0.95rem;
+    color: #580016;
+    margin-bottom: 10px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    background-color: #ffffff;
+    border: 1px solid #d99bb1;
+    color: #800020;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+}
+
+/* Card / Kotak Konten Sederhana */
+.card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card {
+    border: 1px solid #f2d6dc;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #fdf5f6;
+}
+
+.card h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #580016;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #4a5568;
+}
+
+/* Timeline Pendidikan */
+.education-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.edu-item {
+    border-left: 3px solid #800020;
+    padding-left: 12px;
+}
+
+.edu-school {
+    font-weight: bold;
+    color: #580016;
+    font-size: 0.95rem;
+}
+
+.edu-desc {
+    font-size: 0.85rem;
+    color: #666666;
+}
+
+/* Tampilan Daftar */
+ul.simple-list {
+    margin-left: 20px;
+    font-size: 0.95rem;
+}
+
+ul.simple-list li {
+    margin-bottom: 6px;
+    color: #4a5568;
+}
+
+/* Footer */
+footer {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #6c757d;
+    background-color: #fdf5f6;
+    border-top: 1px solid #f2d6dc;
+}
+
+/* Responsif HP */
+@media (max-width: 550px) {
+    .profile-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-links a {
+        font-size: 0.8rem;
+    }
+}
